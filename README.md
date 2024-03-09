@@ -1,3 +1,5 @@
+![color to grayscale converter](./docs/header.png)
+
 # Color Code To Grayscale Converter
 
 This is a simple javascript shenanigan which converts any given color to its grayscale counterpart. I built this just so I could compare both versions of the same color while drawing or doing artsy stuff. Especially while making pixel art, it is crucial to determine the luminosity index of each color so that you can lay the black and white pixels first and when the dull layout of the scene is ready, then you start to color it. 
