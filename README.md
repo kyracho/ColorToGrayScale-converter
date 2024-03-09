@@ -15,13 +15,13 @@ I used "luminosity" method to calculate the grayscale version of the picked colo
 ### Luminosity Method
 
 ```js
-(red × 0.3 + green × 0.59 + blue × 0.11) = grey
+grey = (red × 0.3 + green × 0.59 + blue × 0.11)
 ```
 
 ### Average Method
 
 ```js
-(red + green + blue) ÷ 3 = average
+average = (red + green + blue) ÷ 3
 rgb(average, average, average) // see what we did here?
 ```
 
