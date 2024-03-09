@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grayscale Converter</title>
+	
+	<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+<div class="flex flex-col items-center justify-center">
+  <h1 class="text text-3xl font-bold text-slate-700">Color Grayscale converter</h1>
+  <div class="my-5 h-fit rounded-md p-6 shadow-lg">
+    <div class="mb-5">
+      <label for="color-pick">Pick a color</label>
+      <input name="color-pick" type="color" id="colorpicker" class="h-10 w-full" />
+    </div>
+    <div class="flex w-full flex-row justify-between gap-4">
+      <span class="flex flex-col items-center gap-2">
+        <div id="color-display" class="h-36 w-36 rounded-md border-2 shadow-md"></div>
+        Color Display
+      </span>
+      <span class="flex flex-col items-center gap-2">
+        <div id="grayscale" class="h-36 w-36 rounded-md border-2 shadow-md"></div>
+        Grayscale Display
+      </span>
+    </div>
+  </div>
+  <div class="p-6 shadow-lg">
+    <div class="">
+      <div class="">
+        <div class="mb-2 border-b-2 py-2 text-lg font-semibold text-slate-600">Color Info</div>
+        <div class="">
+          <p><b>RGB:</b> <i>rgb</i>( <span id="r-value" class="font-bold text-red-400">0</span>, <span id="g-value" class="font-bold text-green-400">0</span>, <span id="b-value" class="font-bold text-blue-400">0</span> )</p>
+          <p><b>CMYK:</b> <i>cmyk</i>( <span id="c-value" class="font-bold text-cyan-400">0</span>, <span id="m-value" class="font-bold text-purple-400">0</span>, <span id="y-value" class="font-bold text-yellow-500">0</span>, <span id="k-value" class="font-bold">0</span> )</p>
+          <p><b>HSL:</b> <i>hsl</i>( <span id="h-value" class="font-bold">0</span>, <span id="s-value" class="font-bold">0</span>, <span id="l-value" class="font-bold">0</span> )</p>
+          <p><b>Hex:</b> <span id="hex-value">#000000</span></p>
+        </div>
+		
+		<div class="mb-2 border-b-2 py-2 text-lg font-semibold text-slate-600">Grayscale Info</div>
+        <div class="">
+          <p><b>RGB:</b> <i>rgb</i>( <span id="gr-value" class="font-bold text-red-400">0</span>, <span id="gg-value" class="font-bold text-green-400">0</span>, <span id="gb-value" class="font-bold text-blue-400">0</span> )</p>
+		  <p><b>Luminosity:</b> <span id="lumin-value">0</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+	<script src="index.js"></script>
+
+</body>
+</html>
