@@ -216,3 +216,61 @@ colorPicker.addEventListener('input', function() {
 	ggValue.textContent = grayColor[1];
 	gbValue.textContent = grayColor[2];
 })
+
+// =============== Dark Mode ===============
+
+let dark = false;
+function darkMode(){
+	
+	if(dark == false){
+		document.querySelector('.text').classList.add('text-white') //Title
+
+		//Background
+		document.documentElement.style.backgroundColor = 'black';
+
+		//The containers
+		document.querySelectorAll('.containers').forEach(element => {
+			element.classList.add('bg-gray-950')
+			element.classList.remove('bg-white')
+			element.classList.add('text-white')
+			element.classList.remove('text-slate-600')
+		})
+
+		//Color display / grayscale to a white shadow
+		colorDisplay.classList.add("shadow-white")
+		grayscaleDisplay.classList.add("shadow-white")
+
+		//Dark mode button
+		document.getElementById("darkMode").classList.add('bg-gray-950')
+		document.getElementById("darkMode").classList.remove('bg-white')
+		document.getElementById("darkMode").classList.add('text-white')
+
+		dark = true;
+	}else{
+
+		document.querySelector('.text').classList.remove('text-white') //Title
+
+		//Background
+		document.documentElement.style.backgroundColor = 'white';
+
+		//The containers
+		document.querySelectorAll('.containers').forEach(element => {
+			element.classList.remove('bg-gray-950')
+			element.classList.add('bg-white')
+			element.classList.remove('text-white')
+			element.classList.add('text-slate-600')
+		})
+
+		//Color display / grayscale to a black shadow
+		colorDisplay.classList.remove("shadow-white")
+		grayscaleDisplay.classList.remove("shadow-white")
+		
+		//Dark mode button
+		document.getElementById("darkMode").classList.remove('bg-gray-950')
+		document.getElementById("darkMode").classList.add('bg-white')
+		document.getElementById("darkMode").classList.remove('text-white')
+
+		dark = false;
+	}
+	
+}
