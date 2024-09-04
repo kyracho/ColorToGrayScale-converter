@@ -17,7 +17,7 @@
   </head>
   <body>
     <div class="justify-start absolute">
-      <button id="darkMode" class="m-1 left-0 top-0 border-2 shadow-lg bg-white rounded text-3xl p-0.5">
+      <button id="darkMode" class="m-1 left-0 top-0 border-2 shadow-lg bg-white rounded text-3xl p-0.5" onclick="darkMode()">
         <i class="fa-solid fa-moon"></i>
       </button>
     </div>
@@ -25,9 +25,9 @@
       <h1 class="text text-3xl font-bold text-slate-500">
         Color Grayscale converter
       </h1>
-      <div class="my-5 h-fit rounded-md p-6 shadow-lg bg-white">
+      <div class="my-5 h-fit rounded-md p-6 shadow-lg bg-white toBlack containers">
         <div class="mb-5">
-          <label for="color-pick">Pick a color</label>
+          <label for="color-pick ">Pick a color</label>
           <input
             name="color-pick"
             type="color"
@@ -52,11 +52,11 @@
           </span>
         </div>
       </div>
-      <div class="p-6 shadow-lg bg-white">
+      <div class="p-6 shadow-lg bg-white containers">
         <div class="">
           <div class="">
             <div
-              class="mb-2 border-b-2 py-2 text-lg font-semibold text-slate-600"
+              class="mb-2 border-b-2 py-2 text-lg font-semibold text-slate-600 containers"
             >
               Color Info
             </div>
@@ -84,7 +84,7 @@
             </div>
 
             <div
-              class="mb-2 border-b-2 py-2 text-lg font-semibold text-slate-600"
+              class="mb-2 border-b-2 py-2 text-lg font-semibold text-slate-600 containers"
             >
               Grayscale Info
             </div>
@@ -101,13 +101,11 @@
         </div>
       </div>
     </div>
-
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-kenU1KFdBIe4zVFQWfCWjDzOvNK++vUmogQS8b8wWvU2zp4uF09s+SkvMMNKBaCo"
       crossorigin="anonymous"
     ></script>
-
     <script src="index.js"></script>
   </body>
 </html>
