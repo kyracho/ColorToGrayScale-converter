@@ -17,16 +17,32 @@
       html, body {
         font-family: 'Calibri', sans-serif;
       }
+      
+      #title {
+        font-size: 1.875rem; /* Default size for larger screens */
+        font-weight: bold;
+        color: rgb(100, 116, 139);
+        text-align: center;
+      }
+
+      @media (max-width: 500px) {
+        #title {
+          font-size: 1.3rem; /* Size for screens smaller than 400px */
+          margin-top: 13px;
+        }
+      }
     </style>
   </head>
   <body>
     <div class="justify-start absolute">
-      <button id="darkMode" class="m-1 left-0 top-0 border-2 shadow-lg bg-white rounded text-3xl p-0.5" onclick="darkMode()">
-        <i class="fa-solid fa-moon"></i>
-      </button>
+      <div class="absolute left-0 top-0 m-2">
+        <button id="darkMode" class="m-1 left-0 top-0 border-2 shadow-lg bg-white rounded text-3xl p-0.5" onclick="darkMode()">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+      </div>
     </div>
     <div class="flex flex-col items-center justify-center">
-      <h1 class="text text-3xl font-bold text-slate-500">
+      <h1 id="title">
         Color Grayscale converter
       </h1>
       <div class="my-5 h-fit rounded-md p-6 shadow-lg bg-white toBlack containers">
